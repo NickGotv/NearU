@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingLeft="30dp"
+    android:paddingTop="80dp"
+    android:paddingRight="30dp"
+    android:backgroundTint="@color/colorBackground"
+    android:background="@color/colorBackground"
+    tools:context="RegisterActivity">
+
+
+    <TextView
+        android:id="@+id/nearu_text"
+        android:layout_width="wrap_content"
+        android:layout_height="115dp"
+        android:shadowColor="#002B1E1E"
+        android:text="NearU"
+        android:textColor="#D81B60"
+        android:textColorLink="#D81B60"
+        android:textSize="36sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+        android:outlineAmbientShadowColor="#D81B60"
+        android:outlineSpotShadowColor="#D81B60"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/email_reg_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="#FFFFFF"
+        android:outlineAmbientShadowColor="#D81B60"
+        android:outlineSpotShadowColor="#D81B60"
+        app:errorEnabled="true">
+
+        <EditText
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/password_reg_l"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#D81B60"
+        android:textColorHint="#FFFFFF"
+        android:outlineAmbientShadowColor="#D81B60"
+        android:outlineSpotShadowColor="#D81B60"
+        app:errorEnabled="true">
+
+        <EditText
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        app:passwordToggleTint="#D81B60"
+        android:textColorHint="#FFFFFF"
+        android:outlineAmbientShadowColor="#D81B60"
+        android:outlineSpotShadowColor="#D81B60"/>
+
+    <ProgressBar
+        android:id="@+id/loading"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/login_button_l"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="SIGN IN"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:id="@+id/nearu_text3"
+        android:layout_width="match_parent"
+        android:layout_height="134dp"
+        android:shadowColor="#002B1E1E"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#D81B60"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/nearu_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shadowColor="#002B1E1E"
+        android:text="Don't have an account?"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorLink="#D81B60"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/register_button_l"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="@color/colorButton"
+        android:text="Create account"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
