@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
 public class LoginActivity extends AppCompatActivity {
 
     private static final Pattern PASSWORD_PATTRN =
-            Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[@#$%^&+=])(?=\\S+$).{6,}$");
+            Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=\\S+$).{8,}$");
     private Button login_button, register_button;
     private TextInputLayout textInputEmail, textInputPassword;
 
